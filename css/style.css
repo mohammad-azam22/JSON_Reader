@@ -1,0 +1,332 @@
+/*==============CSS Utility Classes===============*/
+.font_size1{
+	font-size: 15px;
+}
+.font_size2{
+	font-size: 14px;
+}
+
+
+.font_weight1{
+	font-weight: 700;
+}
+.font_weight2{
+	font-weight: 400;
+}
+
+/*================================================*/
+
+
+/*==============CSS Reset Start===================*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*==============CSS Reset End=====================*/
+
+/*==============Body CSS Start====================*/
+body{
+	background-color: rgba(117, 168, 255, 1.0);
+}
+
+body button{
+	cursor: pointer;
+}
+
+
+/*==============Body CSS End======================*/
+
+/*==============Header CSS Start====================*/
+header{
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	top: 0px;
+	background-color: rgba(172, 55, 250, 0.9);
+}
+
+header ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+header li{
+	display: flex;
+	align-items: center;
+	margin: 4px 10vw 0px 10vw;
+}
+
+header a{
+	padding: 20px;
+	transition: 0.3s;
+	border-radius: 5px;
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, 1.0);
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1.0);
+	font-family: Arial;
+	font-weight: bold;
+}
+
+header a:hover{
+	background-color: rgba(117, 168, 255, 1.0);	
+}
+
+/*==============Header CSS End====================*/
+
+/*==============Main CSS Start====================*/
+main{
+	margin: 100px;
+}
+
+main div.main_heading h1{
+	margin: 130px 30px 50px 30px;
+	font-family: Arial;
+	text-align: center;
+}
+
+main div.main_heading h2{
+	margin: 0px 30px 50px 30px;
+	font-family: Arial;
+	text-align: center;
+}
+
+main div.main_heading p{
+	width: 35vw;
+	text-align: center;
+}
+
+
+main .functions{
+	display: flex;
+	justify-content: center;
+}
+
+
+main #object_file{
+	display: none;
+}
+
+main .functions button{
+	padding: 20px;
+	transition: 0.3s;
+	border-radius: 5px;
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, 1.0);
+	color: rgba(0, 0, 0, 1.0);
+	font-family: Arial;
+	font-weight: bold;
+	margin: 4px 5vw 0px 5vw;
+}
+
+main .functions button:hover{
+	background-color: rgba(172, 55, 250, 1.0);
+}
+
+main .details1{
+	display: flex;
+	justify-content: center;
+}
+
+main .details2{
+	margin: 5vh 2vw;
+	overflow: auto;
+	max-height:30vh;
+	max-width: 35vw;
+}
+
+main .details2 table, td{
+	background-color: rgba(255, 255, 255, 1.0);
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+
+}
+
+main .details2 table{
+	margin: auto;
+  	width: 50%;
+  	font-family: consolas;
+}
+
+main .details2 td {
+  padding: 3px 5px;
+}
+
+main .content1{
+	display: flex;
+	justify-content: center;
+}
+
+main .content2 textarea{
+	padding: 5px;
+	resize: none;
+	width: 35vw;
+  	height: 35vh;
+  	white-space: pre;
+}
+
+main .content2 errors_area{
+	width: 35vw;
+}
+
+
+/*==============Main CSS End======================*/
+
+/*==============Footer CSS Start==================*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	height: 4vw;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+	background-color : rgba(172, 55, 250, 1.0);
+}
+
+footer section.made_by p{
+	font-family: consolas;
+	margin: 1vw 0vw;
+}
+
+footer .sep1{
+	height: 3vw;
+	border-left: 1px solid black;
+	margin: 0.5vw 10vw 0vw 5vw;
+}
+
+footer section.my_links .icons a img{
+	margin: 0.5vw 0vw;
+}
+
+
+/*==============Footer CSS End====================*/
+
+/*==============Responsive CSS====================*/
+
+@media only screen and (max-width: 1400px){
+	main .content2 textarea{
+		width: 45vw;
+	}
+
+	footer{
+		height: 5vw;
+	}
+
+	footer .sep1{
+		height: 4vw;
+		margin: 0.5vw 5vw 0vw 5vw;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	footer{
+		height: 6vw;
+	}
+
+	footer .sep1{
+		height: 4vw;
+		margin: 1vw 5vw 0vw 5vw;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	footer section.my_links .icons a img{
+		width: 5vw;
+	}
+
+	.font_size1{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	main .details2{
+		max-width: 55vw;
+	}
+
+	main .content2 textarea{
+		width: 55vw;
+	}
+
+	footer{
+		height: 8vw;
+	}
+
+	footer .sep1{
+		height: 6vw;
+		margin: 1vw 5vw 0vw 5vw;
+	}
+
+	footer section.my_links .icons a img{
+		width: 6vw;
+		margin: 1vw 0vw;
+	}
+
+	.font_size1{
+		font-size: 13px;
+	}
+
+
+}
+
+@media only screen and (max-width: 525px){
+	main div.main_heading h1{
+		margin: 130px 0px 50px 0px;
+	}
+
+	main div.main_heading h2{
+		margin: 0px 0px 50px 0px;
+	}
+
+	main .details2{
+		max-width: 60vw;
+	}
+
+	main .content2 textarea{
+		width: 60vw;
+	}
+
+	footer{
+		height: 8vw;
+	}
+
+	footer .sep1{
+		height: 6vw;
+		margin: 1vw 5vw 0vw 5vw;
+	}
+
+	footer section.my_links .icons a img{
+		width: 6vw;
+		margin: 1vw 0vw;
+	}
+
+	.font_size1{
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.font_size1{
+		font-size: 9px;
+	}
+	.font_size2{
+		font-size: 11px;
+	}
+
+}
+
+@media only screen and (max-width: 400px){
+	.font_size1{
+		font-size: 7px;
+	}
+	.font_size2{
+		font-size: 9px;
+	}
+
+}
+
+/*================================================*/
