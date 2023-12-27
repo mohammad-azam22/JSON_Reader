@@ -2,8 +2,6 @@
 
 This is a website that allows you to view and edit JSON files easily. You can upload multiple JSON files and see their contents. You can also edit a JSON file and download the modified version.
 
-![JSON File Viewer and Editor](https://i.imgur.com/3XQZyZL.png)
-
 ## Pages
 
 The website has two main pages: View File and Edit File.
