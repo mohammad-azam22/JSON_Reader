@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Mohammad Azam">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>JSON File Viewer and Editor</title>
+	</head>
+	<body>
+		<header id="home">
+			<nav class="navbar">
+				<ul class="navbar-links font_size2">
+					<li><a href="./index.html">View File</a></li>
+					<li><a href="./edit_file.html">Edit File</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="main_heading font_size1">
+				<h1 id="main_heading" class="font_weight1">
+					JSON File Editor
+				</h1>
+				<h2 id="main_heading">
+					Please select the JSON file to edit
+				</h2>
+			</div>
+			<div class="functions">
+				<input type="file" id="object_file" name="object_file" accept=".json" oninput="showSelectedFile()">
+				<button id="select_file_btn" class="font_size2" type="button" onclick="selectFile()">Select File
+				</button>
+				<button id="load_file_btn" class="font_size2" type="button" onclick="editFile()">Edit File
+				</button>
+				<button id="save_btn" class="font_size2" type="button" onclick="saveFile()">Download File
+				</button>
+			</div>
+			<div class="details1">
+				<div class="details2">
+					<table id="file_details">
+						<thead id="tab_head">
+							<tr id="tab_header" class="font_weight1">
+								<!-- this tag is populated automatically by JavaScript -->
+							</tr>
+					  	</thead>
+					  	<tbody id="tab_body">
+					  		<!-- this tag is populated automatically by JavaScript -->
+					  	</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="content1">
+				<div class="content2">
+					<!-- this tag is populated automatically by JavaScript -->
+				</div>
+			</div>
+		</main>
+		<footer>
+			<section class="made_by">
+				<p class="font_size1 font_weight2">
+					Made by: Mohammad Azam<br>
+					Course: MCA Semester 1
+				</p>
+			</section>
+			<div class="sep1"></div>
+			<section class="my_links">
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/mohammad-azam22/" target="_blank">
+						<img src="./img/linkedin.svg" alt="linkedin_logo">
+					</a>
+				</div>
+			</section>
+		</footer>
+	</body>
+	<script src="./js/edit_logic.js">
+	</script>	
+</html>
